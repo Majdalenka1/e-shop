@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.company.CreateDB">
+    <update id="createTable">
+        CREATE TABLE IF NOT EXISTS items (
+            id INTEGER PRIMARY KEY,
+            partNo VARCHAR,
+            serialNo VARCHAR,
+            name VARCHAR,
+            description VARCHAR,
+            numberInStock INTEGER,
+            price REAL
+        )
+    </update>
+</mapper>
